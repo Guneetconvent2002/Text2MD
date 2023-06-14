@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:markdown/markdown.dart' as md;
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 void main() {
@@ -97,6 +95,7 @@ class _MarkdownGeneratorState extends State<MarkdownGenerator> {
             padding: EdgeInsets.all(16.0),
             child: TextField(
               controller: _controller,
+              maxLines: null, // Allow unlimited lines of text
               decoration: InputDecoration(
                 labelText: 'Enter your text',
               ),
